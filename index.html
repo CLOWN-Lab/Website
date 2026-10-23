@@ -112,7 +112,43 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
   .steps{grid-template-columns:1fr}
   .hero{padding-top:3rem}
 }
-@media (max-width:520px){.steps{grid-template-columns:1fr}}
+@media (max-width:520px){
+  .wrap{padding-left:1rem;padding-right:1rem}
+
+  header .wrap{min-height:0;padding-top:.75rem;padding-bottom:.75rem;align-items:flex-start}
+  .brand{font-size:1.1rem;white-space:nowrap}
+  .brand img{width:32px}
+  nav{width:100%;gap:.35rem .9rem;overflow-x:auto;flex-wrap:nowrap;padding:.35rem 0 .15rem;scrollbar-width:none}
+  nav::-webkit-scrollbar{display:none}
+  nav a{flex:0 0 auto;min-height:44px;display:flex;align-items:center;font-size:.9rem}
+
+  .hero{padding:2.25rem 0 3rem}
+  .hero .wrap{gap:2rem}
+  h1{font-size:clamp(2.35rem,12vw,3.3rem);margin-bottom:1rem}
+  .entry{padding-left:1rem;margin-bottom:1.5rem}
+  .entry .word{font-size:1.8rem}
+  .entry .ipa,.entry .pos{font-size:1rem}
+  .entry .ety{font-size:1.05rem}
+  .hero-logo{max-width:280px;order:-1}
+  .btns{display:grid;grid-template-columns:1fr;gap:.65rem}
+  .btn{text-align:center;min-height:48px;padding:.75rem 1rem}
+
+  section.block{padding:3rem 0}
+  h2.title{font-size:2rem;margin-bottom:1.15rem}
+  .cols{gap:1.75rem}
+  .facts{padding-left:1rem}
+  .steps{grid-template-columns:1fr;gap:.8rem;margin-top:1.5rem}
+  .steps li{padding:1rem}
+  .chips{gap:.45rem}
+  .chips li{padding:.35rem .75rem;font-size:.9rem}
+  .join .btn{display:block;margin:.65rem 0 0;width:100%}
+  summary{font-size:1.1rem;padding:1rem 0}
+  details .a{padding-right:.25rem}
+  .gallery{padding:2rem 1rem}
+  footer{padding:2rem 0}
+  footer .wrap{display:block}
+  footer .wrap span{display:block;margin-top:.5rem}
+}
 </style>
 </head>
 <body>
